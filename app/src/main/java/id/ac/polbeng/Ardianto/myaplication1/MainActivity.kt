@@ -29,6 +29,7 @@ class MainActivity : AppCompatActivity() {
         val nextVal = currVal - 1
         tvCounter.text = nextVal.toString()
     }
+
     fun reset_Number(v: View) {
         tvCounter.text = "0"
     }
