@@ -19,19 +19,16 @@ class MainActivity : AppCompatActivity() {
         btnResetNumber = findViewById(R.id.btnResetNumber)
         tvCounter.text = "1"
     }
-
     fun addNumber(v: View) {
         val currVal = tvCounter.text.toString().toInt()
         val nextVal = currVal + 1
         tvCounter.text = nextVal.toString()
     }
-
     fun subtract_Number(v: View) {
         val currVal = tvCounter.text.toString().toInt()
         val nextVal = currVal - 1
         tvCounter.text = nextVal.toString()
     }
-
     fun reset_Number(v: View) {
         tvCounter.text = "0"
     }
