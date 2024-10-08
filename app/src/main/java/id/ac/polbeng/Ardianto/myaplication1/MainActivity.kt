@@ -17,16 +17,19 @@ class MainActivity : AppCompatActivity() {
         setContentView(binding.root)
         binding.tvCounter.text = "1"
     }
+
     fun addNumber(v: View) {
         val currVal = binding.tvCounter.text.toString().toInt()
         val nextVal = currVal + 1
         binding.tvCounter.text = nextVal.toString()
     }
+
     fun subtract_Number(v: View) {
         val currVal = binding.tvCounter.text.toString().toInt()
         val nextVal = currVal - 1
         binding.tvCounter.text = nextVal.toString()
     }
+
     fun reset_Number(v: View) {
         binding.tvCounter.text = "0"
     }
